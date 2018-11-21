@@ -14,6 +14,6 @@ namespace hederasdkdotnetwrapper {
 
 		/// Return a message corresponding to the passing in error. Returns [NULL] if there is no corresponding error.
 		/// Error messages may only be obtained once.
-		char* HederaErrorMessage(HederaError error);
+		static char* HederaErrorMessage(HederaError error);
 	};
 }

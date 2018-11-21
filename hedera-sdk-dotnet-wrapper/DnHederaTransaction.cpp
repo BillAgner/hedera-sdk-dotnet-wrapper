@@ -21,9 +21,9 @@ void hederasdkdotnetwrapper::DnHederaTransaction::HederaTransactionSetMemo(Heder
 	hedera_transaction_set_memo(transaction, memo);
 }
 
-void hederasdkdotnetwrapper::DnHederaTransaction::HederaTransactionSign(HederaTransaction* transaction, HederaSecretKey secretKey)
+void hederasdkdotnetwrapper::DnHederaTransaction::HederaTransactionSign(HederaTransaction* transaction, HederaSecretKey key)
 {
-	hedera_transaction_sign(transaction, secretKey);
+	hedera_transaction_sign(transaction, key);
 }
 
 HederaError hederasdkdotnetwrapper::DnHederaTransaction::HederaTransactionExecute(HederaTransaction* transaction, HederaTransactionResponse* response)

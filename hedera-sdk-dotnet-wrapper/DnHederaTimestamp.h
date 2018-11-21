@@ -12,6 +12,6 @@ namespace hederasdkdotnetwrapper {
 	public:
 		DnHederaTimestamp();
 
-		HederaTimestamp HederaTimestampNow();
+		static HederaTimestamp HederaTimestampNow();
 	};
 }

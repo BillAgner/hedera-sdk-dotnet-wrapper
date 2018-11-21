@@ -11,6 +11,6 @@ namespace hederasdkdotnetwrapper {
 	{
 	public:
 		DnHederaAccountId();
-		HederaError HederaAccountIdFromStr(const char* s, HederaAccountId* out);
+		static HederaError HederaAccountIdFromStr(const char* s, HederaAccountId* out);
 	};
 }

@@ -12,14 +12,14 @@ namespace hederasdkdotnetwrapper {
 	public:
 		DnHederaTransaction();
 
-		void HederaTransactionSetOperator(HederaTransaction*, HederaAccountId operator_);
+		static void HederaTransactionSetOperator(HederaTransaction* transaction, HederaAccountId operator_);
 
-		void HederaTransactionSetNode(HederaTransaction*, HederaAccountId node);
+		static void HederaTransactionSetNode(HederaTransaction* transaction, HederaAccountId node);
 
-		void HederaTransactionSetMemo(HederaTransaction*, const char* memo);
+		static void HederaTransactionSetMemo(HederaTransaction* transaction, const char* memo);
 
-		void HederaTransactionSign(HederaTransaction*, HederaSecretKey);
+		static void HederaTransactionSign(HederaTransaction* transaction, HederaSecretKey key);
 
-		HederaError HederaTransactionExecute(HederaTransaction*, HederaTransactionResponse*);
+		static HederaError HederaTransactionExecute(HederaTransaction* transaction, HederaTransactionResponse* response);
 	};
 }

@@ -12,8 +12,8 @@ namespace hederasdkdotnetwrapper {
 	public:
 		DnHederaTransactionId();
 
-		HederaTransactionId HederaTransactionIdNew(HederaAccountId account);
+		static HederaTransactionId HederaTransactionIdNew(HederaAccountId account);
 
-		char* HederaTransactionIdToStr(HederaTransactionId* transaction);
+		static char* HederaTransactionIdToStr(HederaTransactionId* transaction);
 	};
 }

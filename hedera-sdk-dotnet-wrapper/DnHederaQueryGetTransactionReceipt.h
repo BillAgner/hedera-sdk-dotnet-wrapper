@@ -12,11 +12,11 @@ namespace hederasdkdotnetwrapper {
 	public:
 		DnHederaQueryGetTransactionReceipt();
 
-		HederaQuery* HederaQueryGetTransactionReceiptNew(
-			HederaClient*,
+		static HederaQuery* HederaQueryGetTransactionReceiptNewQuery(
+			HederaClient* client,
 			HederaTransactionId transaction_id
 		);
 
-		HederaError HederaQuery_GetTransactionReceiptAnswer(HederaQuery*, HederaQueryGetTransactionReceiptAnswer*);
+		static HederaError HederaQueryGetTransactionReceiptAnswerToQuery(HederaQuery* query, HederaQueryGetTransactionReceiptAnswer* answer);
 	};
 }

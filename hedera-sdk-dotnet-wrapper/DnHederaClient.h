@@ -14,10 +14,10 @@ namespace hederasdkdotnetwrapper {
 
 		/// Establish a connection to a Hedera node.
 		/// Must be closed with [hedera_client_close].
-		HederaClient* HederaClientDial(const char* address);
+		static HederaClient* HederaClientDial(const char* address);
 
 		/// Close and releases resources for a [HederaClient].
-		void HederaClientClose(HederaClient* client);
+		static void HederaClientClose(HederaClient* client);
 
 	};
 }

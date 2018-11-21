@@ -12,8 +12,8 @@ namespace hederasdkdotnetwrapper {
 	public:
 		DnHederaTransactionCryptoTransfer();		
 
-		HederaTransaction* HederaTransactionCryptoTransferNew(HederaClient* client);
+		static HederaTransaction* HederaTransactionCryptoTransferNew(HederaClient* client);
 
-		void HederaTransactionCryptoTransferAddTransfer(HederaTransaction* transaction, HederaAccountId id, int64_t amount);
+		static void HederaTransactionCryptoTransferAddTransfer(HederaTransaction* transaction, HederaAccountId id, int64_t amount);
 	};
 }

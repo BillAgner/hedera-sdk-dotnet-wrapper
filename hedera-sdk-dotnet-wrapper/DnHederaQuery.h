@@ -12,6 +12,6 @@ namespace hederasdkdotnetwrapper {
 	public:
 		DnHederaQuery();
 
-		HederaError HederaQueryCost(HederaQuery*, uint64_t*);
+		static HederaError HederaQueryCost(HederaQuery* query, uint64_t* cost);
 	};
 }

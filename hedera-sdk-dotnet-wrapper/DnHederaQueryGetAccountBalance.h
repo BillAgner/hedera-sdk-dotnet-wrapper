@@ -12,8 +12,8 @@ namespace hederasdkdotnetwrapper {
 	public:
 		DnHederaQueryGetAccountBalance();
 
-		HederaQuery* HederaQueryGetAccountBalanceNewQuery(HederaClient*, HederaAccountId account);
+		static HederaQuery* HederaQueryGetAccountBalanceNewQuery(HederaClient* client, HederaAccountId account);
 
-		HederaError HederaQueryGetAccountBalanceAnswerToQuery(HederaQuery*, HederaQueryGetAccountBalanceAnswer*);
+		static HederaError HederaQueryGetAccountBalanceAnswerToQuery(HederaQuery* query, HederaQueryGetAccountBalanceAnswer* answer);
 	};
 }

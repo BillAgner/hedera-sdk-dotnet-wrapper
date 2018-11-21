@@ -12,10 +12,10 @@ namespace hederasdkdotnetwrapper {
 	public:
 		DnHederaTransactionCreateAccount();
 		
-		HederaTransaction* HederaTransactionCreateAccountNew(HederaClient* client);
+		static HederaTransaction* HederaTransactionCreateAccountNew(HederaClient* client);
 
-		void HederaTransactionCreateAccountSetInitialBalance(HederaTransaction* transaction, uint64_t balance);
+		static void HederaTransactionCreateAccountSetInitialBalance(HederaTransaction* transaction, uint64_t balance);
 
-		void HederaTransactionCreateAccountSetKey(HederaTransaction* transaction, HederaPublicKey key);
+		static void HederaTransactionCreateAccountSetKey(HederaTransaction* transaction, HederaPublicKey key);
 	};
 }
