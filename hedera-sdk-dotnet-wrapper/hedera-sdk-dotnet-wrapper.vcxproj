@@ -111,7 +111,7 @@
       <AdditionalIncludeDirectories>$(MSProjectDir)..\..\hedera-sdk-c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>$(MSProjectDir)..\..\hedera-sdk-c\libs\x86_64-pc-windows-gnu\hedera.lib;ws2_32.lib;iphlpapi.lib;dbghelp.lib;userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -132,7 +132,7 @@
       <AdditionalIncludeDirectories>$(MSProjectDir)..\..\hedera-sdk-c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>$(MSProjectDir)..\..\hedera-sdk-c\libs\x86_64-pc-windows-gnu\hedera.lib;ws2_32.lib;iphlpapi.lib;dbghelp.lib;userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

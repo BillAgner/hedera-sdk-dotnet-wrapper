@@ -6,9 +6,9 @@ hederasdkdotnetwrapper::DnHederaClient::DnHederaClient()
 {
 }
 
-HederaClient* hederasdkdotnetwrapper::DnHederaClient::HederaClientDial(const char * address)
+HederaError hederasdkdotnetwrapper::DnHederaClient::HederaClientDial(const char* address, HederaClient** client)
 {
-	return hedera_client_dial(address);
+	return hedera_client_dial(address, client);
 }
 
 void hederasdkdotnetwrapper::DnHederaClient::HederaClientClose(HederaClient* client)

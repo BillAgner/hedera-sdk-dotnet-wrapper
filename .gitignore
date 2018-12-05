@@ -26,3 +26,5 @@
 /.vs/hedera-sdk-dotnet-wrapper/v15
 /.vs/hedera-sdk-dotnet-wrapper/v15/ipch/HEDERA-SDK-DOTNET-WRAPPER-4cb00c8e/HEDERA-SDK-DOTNET-WRAPPER-2e6dec2d.ipch
 /.vs/hedera-sdk-dotnet-wrapper/v15
+
+Debug/

@@ -3,5 +3,5 @@
 // but are changed infrequently
 
 #pragma once
-
-
+#include "stdio.h"
+#include "hedera-error.h"
